@@ -58,6 +58,10 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+.primary-link{
+  text-decoration: none;
+}
+
 /* Search Section */
 .search {
   margin: 20px auto;

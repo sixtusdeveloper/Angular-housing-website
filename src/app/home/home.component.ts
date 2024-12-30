@@ -85,8 +85,9 @@ import { HousingService } from '../housing.service';
           <p>
             Discover the best housing options tailored to your needs. Browse our extensive collection of homes across various cities and find the one that fits your lifestyle and budget.
           </p>
-
-          <button class="primary-button">Get Started</button>
+          <a href="/about" class="primary-link">
+             <button class="primary-button">Learn More</button>
+          </a>
         </div>
       </div>
 
