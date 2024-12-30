@@ -1,4 +1,145 @@
-/* Put these styles in: src/home/home.component.css */
+
+/* Styles for HomeComponent */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('/assets/webaliser-_TPTXZd9mOo-unsplash.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero .primary-button {
+  padding: 16px 32px; /* Equivalent to py-2 px-3 */
+   /* bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 */
+  background: linear-gradient(to right, #3b82f6, #4f46e5, #8b5cf6);
+  border-radius: 8px; /* rounded-md */
+  border: none; /* border-none */
+  color: white; /* text-white */
+  font-size: 0.875rem; /* text-sm */
+  letter-spacing: 0.05em; /* tracking-wide */
+  display: block; /* block */
+  text-align: center; /* Ensure text is centered within the button */
+  margin: 0 auto; /* Center the button */
+  text-decoration: none; /* Remove underline for better aesthetics */
+  outline: none; /* Remove default focus styles */
+  cursor: pointer; /* Add pointer cursor for interactivity */
+  transition: transform 0.2s, background 0.3s; /* Smooth transitions for hover effects */
+}
+
+.hero .primary-button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  background: linear-gradient(to right, #403bab, #3b82f6, #390f98);
+   /* Add a hover effect with a subtle color shift */
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Search Section */
+.search {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search input[type="search"] {
+  border: solid 1px var(--primary-color);
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 60%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 0 8px var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.search button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #3b82f6, #4f46e5, #8b5cf6);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  background: linear-gradient(to right, #7a73dfda, #3b82f6, #4e3191); 
+}
+
+/* Results Section */
+.results {
+  display: grid;
+  column-gap: 14px;
+  padding: 20px;
+  row-gap: 34px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+/* Responsive Design */
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search input[type="search"] {
+      width: 70%;
+  }
+}
+
+@media (max-width: 499px) {
+  .results {
+      grid-template-columns: 1fr;
+  }
+
+  .search input[type="search"] {
+      width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Put these styles in: src/home/home.component.css
 
 .results {
     display: grid;
@@ -39,4 +180,4 @@
     .results {
         grid-template-columns: 1fr;
     }    
-  }
+  } */

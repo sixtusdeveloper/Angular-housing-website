@@ -7,8 +7,18 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   template: `
     <main>
-      <header class="brand-name">
-        <img class="brand-logo" src="/assets/logo.png" alt="logo" arial-hidden="true" />
+      <header class="navbar">
+        <a routerLink="/" class="brand">
+          <img class="brand-logo" width="20" height="20" src="/assets/logo.png" alt="logo" arial-hidden="true" />
+          <span class="brand-name">yahut</span>
+        </a>
+        
+        <nav class="nav">
+          <ul>
+            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          </ul>
+        </nav>
       </header>
       <section class="content">
         <router-outlet></router-outlet>
