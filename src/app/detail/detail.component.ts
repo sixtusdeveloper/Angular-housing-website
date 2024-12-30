@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HousingService } from '../housing.service';
 import { HousingLocation } from '../housing-location';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-detail',
@@ -62,26 +62,39 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
             <div class="form-group">
               <label for="full-name">Full Name</label>
               <input id="full-name" type="text" formControlName="fullName" class="form-input" />
+              <div *ngIf="applyForm.get('fullName')?.invalid && applyForm.get('fullName')?.touched" class="error-message">
+                Full Name is required.
+              </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
               <input id="email" type="email" formControlName="email" class="form-input" />
+              <div *ngIf="applyForm.get('email')?.invalid && applyForm.get('email')?.touched" class="error-message">
+                <span *ngIf="applyForm.get('email')?.errors?.['required']">Email is required.</span>
+                <span *ngIf="applyForm.get('email')?.errors?.['email']">Please enter a valid email.</span>
+              </div>
             </div>
 
             <div class="form-group">
               <label for="message">Message</label>
               <textarea id="message" formControlName="message" class="form-input form-input-textarea"></textarea>
+              <div *ngIf="applyForm.get('message')?.invalid && applyForm.get('message')?.touched" class="error-message">
+                Message is required.
+              </div>
             </div>
 
             <div class="form-group">
               <label for="terms" class="terms-label">
-                <input id="terms" type="checkbox" class="terms-checkbox" />
+                <input id="terms" type="checkbox" formControlName="terms" class="terms-checkbox" />
                 <span class="agreement"> I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer">terms </a> and <a href="/conditions" target="_blank" rel="noopener noreferrer">conditions</a></span>
               </label>
+              <div *ngIf="applyForm.get('terms')?.invalid && applyForm.get('terms')?.touched" class="error-message">
+                You must agree to the terms and conditions.
+              </div>
             </div>
 
-            <button class="submit-button" type="submit">Submit Application</button>
+            <button class="submit-button" type="submit" [disabled]="applyForm.invalid">Submit Application</button>
           </form>
         </div>
       </div>
@@ -95,13 +108,16 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 export class DetailComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
+  router: Router = inject(Router); // Inject Router
   housingService = inject(HousingService);
   housingLocation: HousingLocation | undefined;
+
+  // Form with Validators
   applyForm = new FormGroup({
-    fullName: new FormControl(''),
-    email: new FormControl(''),
-    message: new FormControl(''),
-    terms: new FormControl('')
+    fullName: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    message: new FormControl('', Validators.required),
+    terms: new FormControl(false, Validators.requiredTrue)
   });
 
   constructor() {
@@ -112,11 +128,19 @@ export class DetailComponent {
   }
 
   submitApplication() {
-    this.housingService.submitApplication(
-      this.applyForm.value.fullName ?? '',
-      this.applyForm.value.email ?? '',
-      this.applyForm.value.message ?? '',
-      this.applyForm.value.terms === 'false' ? false : true
-    );
+    if (this.applyForm.valid) {
+      // Store the application data in localStorage
+      this.housingService.submitApplication(
+        this.applyForm.value.fullName ?? '',
+        this.applyForm.value.email ?? '',
+        this.applyForm.value.message ?? '',
+        this.applyForm.value.terms ?? false
+      );
+
+      // Navigate to the application confirmation page
+      this.router.navigate(['/application-confirmation']);
+    } else {
+      alert('Please fill out all required fields before submitting.');
+    }
   }
 }

@@ -144,6 +144,14 @@
   color: #555;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+
 .agreement a {
   color: #3b82f6;
   text-decoration: none;
@@ -232,6 +240,10 @@
 
   .listing-apply img {
     margin-bottom: 20px;
+  }
+
+  .housing-title {
+    font-size: 1.5rem;
   }
 
   .form-group {

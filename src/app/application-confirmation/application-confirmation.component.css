@@ -1,0 +1,115 @@
+/* Overall container styling */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc; /* Light background */
+    padding: 20px;
+  }
+  
+  /* Confirmation box styling */
+  .confirmation-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .confirmation-header {
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-header h1 {
+    font-size: 28px;
+    color: #2d3a45;
+    font-weight: bold;
+  }
+  
+  .confirmation-header .subheading {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-top: 5px;
+  }
+  
+  /* Content styling */
+  .confirmation-content {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .confirmation-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .confirmation-row strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .confirmation-row span {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Message text styling */
+  .message-text {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    white-space: pre-wrap;
+  }
+  
+  /* Footer with Back button */
+  .confirmation-footer {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .confirmation-box {
+      padding: 20px;
+    }
+  
+    .confirmation-header h1 {
+      font-size: 24px;
+    }
+  
+    .confirmation-header .subheading {
+      font-size: 14px;
+    }
+  
+    .confirmation-row {
+      font-size: 14px;
+    }
+  
+    .message-text {
+      font-size: 14px;
+    }
+  }
+  

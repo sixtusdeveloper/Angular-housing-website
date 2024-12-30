@@ -1,0 +1,144 @@
+/* Hero section with background image */
+.contact-hero {
+    position: relative;
+    background-image: url('/assets/contact-bg.avif'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .contact-hero p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  
+  /* Contact details section */
+  .contact-details {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .contact-section {
+    margin-bottom: 40px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #1e2a37;
+    border-bottom: 3px solid #4a90e2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .info-item {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .info-item:last-child {
+    margin-right: 0;
+  }
+  
+  .info-item h3 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+  }
+  
+  .info-item p {
+    font-size: 1.125rem;
+    color: #333;
+  }
+  
+  .info-item a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .location-map {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .location-map iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  /* Footer section */
+  .contact-footer {
+    background-color: #1e2a37;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  
+  .contact-footer p {
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .contact-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .contact-hero p {
+      font-size: 1.1rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-section p {
+      font-size: 1rem;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .info-item {
+      margin-bottom: 20px;
+    }
+  
+    .contact-footer p {
+      font-size: 0.9rem;
+    }
+  }
+  

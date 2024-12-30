@@ -21,5 +21,16 @@ export class HousingService {
 
   submitApplication(fullName: string, email: string, message: string, terms: boolean) {
     console.log(`Application submitted for ${fullName} with email ${email} and message ${message} and terms ${terms}`);
+
+     // Store the application data in localStorage
+    const applicationData = {
+      fullName,
+      email,
+      message,
+      terms
+    };
+
+    // Save the application data in localStorage
+    localStorage.setItem('applicationData', JSON.stringify(applicationData));
   }
 } 

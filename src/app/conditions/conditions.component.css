@@ -1,0 +1,54 @@
+.privacy-container {
+    padding: 20px;
+  }
+
+  .privacy-hero {
+    background-image: url('/assets/conditions-bg.avif');
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
+    color: white;
+  }
+
+  .privacy-hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    color: aliceblue;
+  }
+
+  .privacy-content {
+    padding: 20px;
+  }
+
+  .privacy-section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+  }
+
+  a {
+    color: #2980b9;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }

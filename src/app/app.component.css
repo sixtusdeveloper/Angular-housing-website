@@ -9,10 +9,10 @@
     box-shadow: 0px 5px 25px var(--shadow-color);
     position: fixed;
     top: 0;
+    background-color: #f8f9fa;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   }
   .content {
     margin-top: 25px;
@@ -22,8 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   }
 

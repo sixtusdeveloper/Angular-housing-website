@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
         <nav class="nav">
           <ul>
           <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-            <li><a routerLink="/" routerLinkActive="active">Contact us</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact us</a></li>
           </ul>
         </nav>
       </header>
@@ -33,8 +33,8 @@ import { RouterModule } from '@angular/router';
             <ul>
               <li><a href="/about">About Us</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/conditions">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
             </ul>
           </nav>
           <div class="social-media">
