@@ -1,0 +1,116 @@
+
+{
+    "locations": [
+      {
+        "id": 0,
+        "name": "Acme Fresh Start Housing",
+        "city": "Chicago",
+        "state": "IL",
+        "photo": "/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+        "availableUnits": 4,
+        "wifi": true,
+        "laundry": true,
+        "description": "Acme Fresh Start Housing offers a vibrant living experience in the heart of Chicago. With modern amenities like high-speed Wi-Fi and on-site laundry facilities, this community is ideal for individuals seeking a fresh start. Located near bustling city attractions, it combines convenience with comfort, providing a welcoming home for professionals and families alike."
+      },
+      {
+        "id": 1,
+        "name": "A113 Transitional Housing",
+        "city": "Santa Monica",
+        "state": "CA",
+        "photo": "/assets/brandon-griggs-wR11KBaB86U-unsplash.jpg",
+        "availableUnits": 0,
+        "wifi": false,
+        "laundry": true,
+        "description": "Nestled in the serene neighborhoods of Santa Monica, A113 Transitional Housing provides a safe and supportive environment. This facility is designed for those in transition, offering essential amenities like laundry services and close proximity to beaches and community resources. Experience a tranquil lifestyle with opportunities for growth and renewal."
+      },
+      {
+        "id": 2,
+        "name": "Warm Beds Housing Support",
+        "city": "Juneau",
+        "state": "AK",
+        "photo": "/assets/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg",
+        "availableUnits": 1,
+        "wifi": false,
+        "laundry": false,
+        "description": "Located amidst the stunning landscapes of Juneau, Warm Beds Housing Support provides a cozy haven for those seeking shelter and warmth. While basic, this housing solution offers an affordable option for individuals prioritizing proximity to nature and community over luxury."
+      },
+      {
+        "id": 3,
+        "name": "Homesteady Housing",
+        "city": "Chicago",
+        "state": "IL",
+        "photo": "/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+        "availableUnits": 1,
+        "wifi": true,
+        "laundry": false,
+        "description": "Homesteady Housing combines urban convenience with a sense of community. Situated in Chicago, it features high-speed internet for remote workers or students and easy access to local dining and entertainment, making it perfect for singles or young professionals."
+      },
+      {
+        "id": 4,
+        "name": "Happy Homes Group",
+        "city": "Gary",
+        "state": "IN",
+        "photo": "/assets/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
+        "availableUnits": 1,
+        "wifi": true,
+        "laundry": false,
+        "description": "Happy Homes Group offers a peaceful retreat in Gary, Indiana. Known for its friendly community and well-maintained facilities, this location is ideal for individuals or small families seeking a quiet and connected living space."
+      },
+      {
+        "id": 5,
+        "name": "Hopeful Apartment Group",
+        "city": "Oakland",
+        "state": "CA",
+        "photo": "/assets/r-architecture-JvQ0Q5IkeMM-unsplash.jpg",
+        "availableUnits": 2,
+        "wifi": true,
+        "laundry": true,
+        "description": "Hopeful Apartment Group presents a blend of modern living and accessibility in Oakland. With Wi-Fi and laundry facilities, this location caters to the needs of busy professionals and students, offering a vibrant and inclusive community setting."
+      },
+      {
+        "id": 6,
+        "name": "Seriously Safe Towns",
+        "city": "Oakland",
+        "state": "CA",
+        "photo": "/assets/phil-hearing-IYfp2Ixe9nM-unsplash.jpg",
+        "availableUnits": 5,
+        "wifi": true,
+        "laundry": true,
+        "description": "Seriously Safe Towns redefines safe and affordable living in Oakland. With ample available units and modern amenities, it provides a welcoming environment for families and individuals seeking comfort and security in their next home."
+      },
+      {
+        "id": 7,
+        "name": "Hopeful Housing Solutions",
+        "city": "Oakland",
+        "state": "CA",
+        "photo": "/assets/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "availableUnits": 2,
+        "wifi": true,
+        "laundry": true,
+        "description": "Hopeful Housing Solutions offers a fresh perspective on affordable housing. Situated in Oakland, this community is well-suited for those seeking modern amenities, a supportive neighborhood, and close access to local attractions."
+      },
+      {
+        "id": 8,
+        "name": "Seriously Safe Towns",
+        "city": "Oakland",
+        "state": "CA",
+        "photo": "/assets/saru-robert-9rP3mxf8qWI-unsplash.jpg",
+        "availableUnits": 10,
+        "wifi": false,
+        "laundry": false,
+        "description": "Located in Oakland, Seriously Safe Towns focuses on providing safe and budget-friendly accommodations. Ideal for those prioritizing space and affordability, it fosters a sense of community without compromising on security."
+      },
+      {
+        "id": 9,
+        "name": "Capital Safe Towns",
+        "city": "Portland",
+        "state": "OR",
+        "photo": "/assets/webaliser-_TPTXZd9mOo-unsplash.jpg",
+        "availableUnits": 6,
+        "wifi": true,
+        "laundry": true,
+        "description": "Capital Safe Towns is a premier housing option in Portland, blending convenience, comfort, and safety. With spacious units, high-speed internet, and laundry facilities, it provides a perfect balance for work and relaxation."
+      }
+    ]
+  }
+  
