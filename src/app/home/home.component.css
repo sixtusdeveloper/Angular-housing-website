@@ -109,6 +109,34 @@
   justify-content: space-around;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem auto;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
 /* Responsive Design */
 @media (min-width: 500px) and (max-width: 768px) {
   .results {
