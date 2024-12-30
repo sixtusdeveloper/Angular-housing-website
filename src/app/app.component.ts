@@ -9,14 +9,14 @@ import { RouterModule } from '@angular/router';
     <main>
       <header class="navbar">
         <a routerLink="/" class="brand">
-          <img class="brand-logo" width="20" height="20" src="/assets/logo.png" alt="logo" aria-hidden="true" />
+          <img class="brand-logo" width="30" height="30" src="/assets/logo.png" alt="logo" aria-hidden="true" />
           <span class="brand-name">yahut</span>
         </a>
         
         <nav class="nav">
           <ul>
-            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/" routerLinkActive="active">Contact us</a></li>
           </ul>
         </nav>
       </header>
@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
       <footer class="footer">
         <div class="footer-content">
           <div class="brand">
-            <img src="/assets/logo.png" alt="Yahut Logo" class="brand-logo">
+            <img src="/assets/logo.png" alt="Yahut Logo" class="brand-logo" width="30" height="30">
             <span class="brand-name-dark">yahut</span>
           </div>
           <nav class="footer-nav">

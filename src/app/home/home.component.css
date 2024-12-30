@@ -30,7 +30,6 @@
 
 .hero .primary-button {
   padding: 16px 32px; /* Equivalent to py-2 px-3 */
-   /* bg-gradient-to-r from-indigo-600 via-blue-500 to-purple-600 */
   background: linear-gradient(to right, #3b82f6, #4f46e5, #8b5cf6);
   border-radius: 8px; /* rounded-md */
   border: none; /* border-none */

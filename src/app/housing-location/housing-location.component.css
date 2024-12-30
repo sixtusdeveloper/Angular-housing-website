@@ -1,7 +1,7 @@
 .listing {
     background: var(--accent-color);
     border-radius: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   .listing-heading {
     font-weight: bold;
