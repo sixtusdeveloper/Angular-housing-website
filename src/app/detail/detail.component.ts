@@ -10,61 +10,59 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   template: `
-    <article>
-      <img class="listing-photo" [src]="housingLocation?.photo"/>
-      <section class="listing-description">
-        <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
-        <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
-      </section>
+  
+  <article>
+    <section class="housing-hero">
+      <img class="housing-hero-image" [src]="housingLocation?.photo" alt="Image of {{ housingLocation?.name }}" />
+      <div class="housing-hero-overlay">
+        <h1 class="housing-title">{{ housingLocation?.name }}</h1>
+        <p class="housing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
+      </div>
+    </section>
 
-      <section class="listing-features">
-        <h2 class="section-heading">About this housing location</h2>
-        <ul>
-          <li>Units available: {{housingLocation?.availableUnits}}</li>
-          <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
-          <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
-          <li>How much does it cost: {{housingLocation?.price | currency:'USD':true}}</li>
-        </ul>
-      </section>
+    <section class="listing-features">
+      <h2 class="section-heading">About this housing location</h2>
+      <ul>
+        <li>Units available: {{housingLocation?.availableUnits}}</li>
+        <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
+        <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
+        <li>How much does it cost: {{housingLocation?.price | currency:'USD':true}}</li>
+      </ul>
+    </section>
 
-      <section class="listing-full-description">
-        <p>{{ housingLocation?.description }}</p>
-      </section>
-       
-      <section class="listing-apply">
-        <h2 class="section-heading">Apply to leave here</h2>
-
-        <form [formGroup]="applyForm" (submit)="submitApplication()">
-          <h3>Application Form</h3>
-
-          <div class="error-message"></div>
-          <div class="success-message"></div>
-
-          <div class="form-group form-group-inline">
-            <label for="full-name">Full name</label>
-            <input id="full-name" type="text" formControlName="fullName" />
-          </div>
-          
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" formControlName="email" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" formControlName="message"></textarea>
-          </div>
+    <section class="listing-full-description">
+      <p>{{ housingLocation?.description }}</p>
+    </section>
     
-          <div class="form-group">
-            <label for="terms">I agree to the terms and conditions</label>
-            <input id="terms" type="checkbox" />
-          </div>
+    <section class="listing-apply">
+      <h2 class="section-heading">Apply to live here</h2>
+      <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <h3>Application Form</h3>
+        <div class="form-group form-group-inline">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" formControlName="fullName" />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" />
+        </div>
 
-          <button class="primary" type="submit">Submit Application</button>
-        </form>
-      </section>
-      
-    </article>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" formControlName="message"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="terms">I agree to the terms and conditions</label>
+          <input id="terms" type="checkbox" />
+        </div>
+
+        <button class="primary" type="submit">Submit Application</button>
+      </form>
+    </section>
+  </article>
+
   `,
   styleUrls: ['./detail.component.css']
 })
