@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
         <nav class="nav">
           <ul>
           <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-            <li><a routerLink="/contact" routerLinkActive="active">Contact us</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
           </ul>
         </nav>
       </header>
