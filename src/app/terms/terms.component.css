@@ -12,6 +12,7 @@ terms-container {
   .terms-hero-overlay {
     background: rgba(0, 0, 0, 0.6);
     padding: 40px;
+    border-radius: 10px;
   }
 
   h1 {
