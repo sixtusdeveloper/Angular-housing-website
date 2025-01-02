@@ -67,6 +67,15 @@ export class HomeComponent {
       this.updatePagination();
     });
   }
+  
+
+  // constructor() {
+  //   this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
+  //     this.housingLocationList = housingLocationList;
+  //     this.filteredLocationList = housingLocationList;
+  //     this.updatePagination();
+  //   });
+  // }
 
   filterResults(text: string) {
     if (!text) {

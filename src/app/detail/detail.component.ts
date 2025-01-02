@@ -126,6 +126,14 @@ export class DetailComponent {
       this.housingLocation = housingLocation;
     });
   }
+  
+
+  // constructor() {
+  //   const housingLocationId = Number(this.route.snapshot.params['id']);
+  //   this.housingService.getHousingLocationById(housingLocationId).then(housingLocation => {
+  //     this.housingLocation = housingLocation;
+  //   });
+  // }
 
   submitApplication() {
     if (this.applyForm.valid) {
