@@ -143,3 +143,17 @@
     opacity: 0.8;
   }
   
+
+   /* Responsive styles */
+   @media (max-width: 768px) {
+    .footer-nav ul {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .footer {
+      padding: 20px 16px;
+      gap: 20px;
+    }
+    
+   }

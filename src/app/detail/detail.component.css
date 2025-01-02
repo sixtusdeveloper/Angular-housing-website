@@ -234,6 +234,13 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+
+  .housing-hero-overlay {
+    width: 80%; /* Ensures it takes 90% of the screen width */
+    padding: 1rem 1.5rem;
+  }
+
+
   .listing-apply {
     grid-template-columns: 1fr;
   }
@@ -243,7 +250,11 @@
   }
 
   .housing-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .apply-form{
+    padding: 4px;
   }
 
   .form-group {

@@ -67,12 +67,20 @@
   
   /* Responsive styles */
   @media (max-width: 768px) {
+    .about-hero {
+      padding: 70px 10px 10px 10px;
+    }
+    .about-hero-content {
+      padding: 10px 20px;
+      max-width: 98%;
+    }
+    
     .about-hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   
     .about-hero p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   
     .about-section h2 {

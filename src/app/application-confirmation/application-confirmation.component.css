@@ -92,6 +92,9 @@
   
   /* Responsive design for smaller screens */
   @media (max-width: 600px) {
+    .confirmation-container {
+      padding: 10px;
+    }
     .confirmation-box {
       padding: 20px;
     }
